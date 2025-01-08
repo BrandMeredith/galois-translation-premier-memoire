@@ -7,7 +7,8 @@
   - Ask ChatGPT 4o: "Please convert the attached pdf to a series of jpegs, one for each page."
 
 - Ask ChatGPT o1 to translate a page for you:
-  - "Please translate the attached page from french into english. Please write the translation in a code box in the language of LaTeX."
+  - "Please translate the attached pages from french into english, in order. Please write the translation to a txt file in the language of LaTeX."
+  - o1 can take 4 pages at once. The above prompt won't provide a .txt file, but rather just a better-formatted code box for copying and pasting.
 
 - Copy and paste the code into Overleaf:
   - https://www.overleaf.com/project/67784f5cf057f2459e85750f
