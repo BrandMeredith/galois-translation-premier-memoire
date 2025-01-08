@@ -6,7 +6,7 @@
 - Convert the PDF to one JPEG per page (ChatGPT o1 doesn't accept PDFs):
   - Ask ChatGPT 4o: "Please convert the attached pdf to a series of jpegs, one for each page."
 
-- Ask ChatGPT o1 to translate it for you:
+- Ask ChatGPT o1 to translate a page for you:
   - "Please translate the attached page from french into english. Please write the translation in a code box in the language of LaTeX."
 
 - Copy and paste the code into Overleaf:
