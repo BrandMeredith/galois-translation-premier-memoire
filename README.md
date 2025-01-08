@@ -10,4 +10,4 @@ This is a work in progress. Please suggest changes or provide a pull request if 
 This is written in LaTeX and developed using the online LaTeX editor Overleaf. The one .tex file in the repo is bound to compile well in Overleaf.
 
 You can view the current version of the tranlation here:
-https://github.com/BrandMeredith/galois-translation-premier-memoire-2/blob/main/Galois.pdf
+[https://github.com/BrandMeredith/galois-translation-premier-memoire-2/blob/main/Galois.pdf](https://github.com/BrandMeredith/galois-translation-premier-memoire/blob/main/galois_premier_memoir_translation.pdf)
