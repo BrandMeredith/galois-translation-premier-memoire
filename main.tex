@@ -87,6 +87,239 @@ When we wish to group substitutions, we will have them all come from the same pe
 Since these are always questions where the original arrangement of the letters does not affect the groups we consider, we should have the same substitutions, regardless of the starting permutation.
 
 
+\textbf{Page 37}
+
+\medskip
+
+\noindent
+\textbf{Lemma II.} --- Given any equation that has no repeated roots, whose roots are \(a, b, c, \dots\), one can always form a function \(V\) of the roots such that none of the values obtained by permuting the roots in every possible way coincide.
+
+\smallskip
+
+\noindent
+For example, one may take
+\[
+V = Aa + Bb + Cc + \dots,
+\]
+where \(A, B, C\) are suitably chosen integers.
+
+\medskip
+
+\noindent
+\textbf{Lemma III.} --- The function \(V\), chosen as indicated in the previous article, has the property that all the roots of the given equation can be expressed rationally in terms of \(V\).
+
+\smallskip
+
+\noindent
+Indeed, let
+\[
+V = \phi(a, b, c, \dots),
+\]
+or
+\[
+V - \phi(a, b, c, \dots) = 0.
+\]
+By multiplying this equation by all the similar ones obtained by permuting its letters in every way (the first letter remaining fixed, and so on), one arrives at an expression symmetrical in \(a, b, c, \dots,\) which can therefore be written in the form of an equation in \(a\) alone. In this manner, one obtains an equation of the form
+\[
+F(V, a) = 0.
+\]
+
+\smallskip
+
+\noindent
+Thus, if in such a group one has substitutions \(S\) and \(T\), one is assured of having the substitution \(ST\). These are the definitions we felt it necessary to recall.
+
+\medskip
+
+\noindent
+\textbf{Lemma I.} --- An irreducible equation cannot share a common root with a rational equation without dividing the latter. For the greatest common divisor between the irreducible equation and the other equation would still be rational; hence, and so forth.
+
+\smallskip
+
+\noindent
+\textbf{Lemma II.} (restated) --- Being given any equation (with no repeated roots), whose roots are \(a, b, c, \dots\), one can form a function \(V\) of those roots so that none of the values obtained by permuting all the roots in every way is equal to another.
+
+\medskip
+
+\noindent
+(\textit{Repeat of the same construction:} \(V = A a + B b + C c + \dots\).)
+
+\medskip
+
+\noindent
+\textbf{Lemma III.} (restated) --- Once \(V\) is chosen as indicated above, it follows that all the roots of the proposed equation can be expressed rationally in terms of \(V\). Indeed, let
+\[
+V = \phi(a, b, c, \dots),
+\]
+or
+\[
+V - \phi(a, b, c, \dots) = 0;
+\]
+on multiplying this equation by all those similarly obtained by permuting its letters, one obtains a symmetrical expression in \(a, b, c, \dots,\) which therefore becomes an equation in \(a\) alone, i.e.~\(F(V, a) = 0\).
+
+\bigskip
+
+\noindent
+\textbf{Page 38}
+
+\medskip
+
+\noindent
+I assert that from here one can deduce the value of \(a\). Indeed, it is enough to look for the common solution of this equation and of the original (proposed) one. Such a solution is unique, for one cannot have, for example, \(F(V, b) = 0\). That would require the equation \(F(V, b) = 0\) to share a common factor with the analogous equation, unless one of the functions \(\phi(a, \dots)\) were equal to one of the functions \(\phi(b, \dots)\), which contradicts our hypothesis.
+
+\smallskip
+
+\noindent
+It follows that \(a\) is thus expressed as a rational function of \(V\), and the same holds for the other roots. This proposition (marked \(^*\)) is cited without proof by Abel in his posthumous memoir on elliptic functions.
+
+\medskip
+
+\noindent
+\textbf{Lemma IV.} --- Suppose that one has formed the equation in \(V\), and that one has selected an irreducible factor so that \(V\) is a root of an irreducible equation. Let \(V, V', V'', \dots\) be the roots of that irreducible equation. If \(a = f(V)\) is one of the roots of the proposed equation, then \(f(V')\) will also be a root of the proposed equation.
+
+\smallskip
+
+\noindent
+Indeed, by multiplying all factors of the form
+\[
+V - \phi(a, b, c, \dots, d)
+\]
+while permuting all the letters, every possible permutation is necessarily accounted for by that polynomial, so that we end up dividing the given equation. Thus we arrive at the function \(V\). Under
+\[
+F(V, a) = 0
+\]
+or in the equation obtained by permuting \(V\) in all letters except the first, we find
+\[
+F(V', b) = 0
+\]
+for some root \(b\) of the proposed equation. Hence, as soon as \(a = f(V)\) (i.e.\ the original root) is combined with \(F(V', b) = 0\), it follows that \(b = f(V')\).
+
+\smallskip
+
+\noindent
+It is thus remarkable that from this proposition one can deduce that the entire group results from an auxiliary equation, namely one in which all of that new equation's roots are rational functions of \(V\) in the given equation. One also notices how peculiar this observation is. Indeed, a single equation with this property is in general not sufficient without a special contrivance.
+
+\bigskip
+
+\noindent
+\textbf{Page 39}
+
+\medskip
+
+\noindent
+\textbf{Proposition I.}
+
+\smallskip
+
+\noindent
+\textbf{Theorem.} --- Let there be a given equation, whose roots are \(a, b, c, \dots\). There will always be a group of permutations of the letters \(a, b, c, \dots\) that enjoys the following property:
+
+\smallskip
+
+\noindent
+1\(^\circ\) That any function of the roots, which is invariant under the substitutions of this group, is rationally known;
+
+\noindent
+2\(^\circ\) Conversely, that any function of the roots that is rationally determinable is invariant under those substitutions.
+
+\smallskip
+
+\noindent
+(In the case of algebraic equations, this group is nothing other than the set of all \(1, 2, 3, \dots, n\) permutations possible on the \(n\) letters, since in that situation, only the symmetric functions are rationally determinable.)
+
+\smallskip
+
+\noindent
+(If in the equation
+\[
+\frac{x^n - 1}{x - 1} = 0
+\]
+one assumes \(a = r\), \(b = r^g\), \(c = r^{g^2}, \dots\), with \(g\) being a primitive root, the group of permutations is simply
+\[
+\begin{matrix}
+abcd \quad \dots \\
+bad \quad \dots \\
+\dots \quad kab \\
+\dots \\
+kabc \quad \dots
+\end{matrix}
+\]
+In this particular example, the number of permutations is equal to the degree of the equation, just as in cases where all the roots are expressed rationally one in terms of another.)
+
+\medskip
+
+\noindent
+\textbf{Demonstration.} --- No matter what the given equation may be, one can find a rational function \(V\) of its roots (so that, for instance, the roots remain distinct under its permutations). Then the entire set of roots can be shown to be rationally dependent on \(V\).
+
+\medskip
+
+\noindent
+\emph{(We call the group of the equation the group in question.)}
+
+\smallskip
+
+\noindent
+\emph{Remark.} We do not merely want a function to remain invariant in form under those permutations, but to keep its numerical value constant under them as well. For instance, if \(F = 2\) or if \(F\) is some equation, that is a function of the roots that remains the same under any permutation. We want every value that is supposed to be rationally known to be expressible as a rational function of the coefficients of the equation and the adjoined quantities.
+
+\bigskip
+
+\noindent
+\textbf{Page 40}
+
+\medskip
+
+\noindent
+Therefore, consider the irreducible equation for which \(V\) is a root (Lemmas III and IV). Let \(V, V', V'', \dots, V^{(n-1)}\) be the roots of that equation. Let
+\[
+\phi V,\ \phi^1 V,\ \phi^2 V,\ \dots,\ \phi^{(n-1)} V
+\]
+be the roots of the proposed equation. Write out the following \(n\) permutations of these roots:
+
+\[
+\begin{aligned}
+&(V)\quad\ \phi V,\ \phi^1 V,\ \phi^2 V,\ \dots,\ \phi^{(n-1)} V; \\
+&(V')\quad \phi V',\ \phi^1 V',\ \phi^2 V',\ \dots,\ \phi^{(n-1)} V'; \\
+&\dots \\
+&(V^{(n-1)})\quad \phi V^{(n-1)},\ \phi^1 V^{(n-1)},\ \dots,\ \phi^{(n-1)}V^{(n-1)}.
+\end{aligned}
+\]
+
+\noindent
+I assert that this group of permutations possesses the stated property. Indeed:
+
+\smallskip
+
+\noindent
+1\(^\circ\) Any function \(F\) of the roots, invariant under the substitutions of this group, can be written in the form
+\[
+F = \psi(V).
+\]
+Then one will have
+\[
+\psi(V') = \psi(V''), \dots = \psi\bigl(V^{(n-1)}\bigr),
+\]
+and thus the value of \(F\) can be determined rationally.
+
+\smallskip
+
+\noindent
+2\(^\circ\) Conversely, if a function \(F\) is rationally determinable, and if we define \(F = \phi(V)\), then we must have
+\[
+\phi(V') = \phi(V''), \dots = \phi\bigl(V^{(n-1)}\bigr),
+\]
+because the equation in \(V\) cannot share a common (commensurable) factor with that in \(V\) satisfying \(F = \phi(V)\) unless it is a purely rational quantity. Therefore \(F\) is necessarily invariant under the substitutions of the group in question.
+
+\smallskip
+
+\noindent
+Hence, this group enjoys the twofold property stated in the theorem. The theorem is therefore proven. We shall call this group the \emph{group of the equation} in question.
+
+\medskip
+
+\noindent
+\textbf{Scholium I.} --- It is evident that in the group of permutations of the letters under consideration, the specific arrangement of letters is not at issue; rather, one only considers the substitutions of the letters by which one passes from one permutation to another.
+
+
 \end{document}
 
 
