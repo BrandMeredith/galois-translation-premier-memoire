@@ -1,0 +1,1 @@
+2025-01-08 As of today, I have changed much of the introduction from what ChatGPT suggested to better match what I feel Galois' intentions were and to better match his old-timey language. The rest is almost entirely from ChatGPT. 
