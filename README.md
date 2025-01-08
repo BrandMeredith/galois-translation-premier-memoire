@@ -1,5 +1,7 @@
 # Premier Memoire by Everiste Galois
-This repo holds a free translation of Everiste Galois' famous "Premier Memoire" where he describes Abstract Algebra for the first time.
+This repo holds a free translation of Everiste Galois' famous "Premier Memoire" where he describes Abstract Algebra for the first time. 
+
+It is also called the "Memoir on the Conditions of Solvability of Equations by Radicals."
 
 I felt that it's important to have this seminal work as a stand-alone free translation into English. None existed, so I am working on it, myself.
 
