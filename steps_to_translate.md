@@ -3,8 +3,8 @@
   - Sourced from the Project Gutenberg book [Œuvres mathématiques d'Évariste Galois by Évariste Galois](https://www.gutenberg.org/ebooks/40213)
   - This book was published in 1897 "under the auspices of the Mathematical Society of France" over 60 years after Galois wrote his Premier Memoire.
 
-- Convert one page of the PDF to JPEG:
-  - https://acrobat.adobe.com/link/acrobat/pdf-to-image
+- Convert the PDF to one JPEG per page (ChatGPT o1 doesn't accept PDFs):
+  - Ask ChatGPT 4o: "Please convert the attached pdf to a series of jpegs, one for each page."
 
 - Ask ChatGPT o1 to translate it for you:
   - "Please translate the attached page from french into english. Please write the translation in a code box in the language of LaTeX."
