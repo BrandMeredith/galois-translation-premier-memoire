@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{needspace}
+\usepackage{amsmath}
 
 \title{Memoir on the Conditions of Solvability of Equations by Radicals}
 \author{Évariste Galois}
@@ -113,11 +115,11 @@ where \(A, B, C\) are suitably chosen integers.
 \noindent
 Indeed, let
 \[
-V = \phi(a, b, c, \dots),
+V = \phi(a, b, c, d, \dots),
 \]
 or
 \[
-V - \phi(a, b, c, \dots) = 0.
+V - \phi(a, b, c, d, \dots) = 0.
 \]
 By multiplying this equation by all the similar ones obtained by permuting its letters in every way (the first letter remaining fixed, and so on), one arrives at an expression symmetrical in \(a, b, c, \dots,\) which can therefore be written in the form of an equation in \(a\) alone. In this manner, one obtains an equation of the form
 \[
@@ -153,9 +155,22 @@ V = \phi(a, b, c, \dots),
 \]
 or
 \[
-V - \phi(a, b, c, \dots) = 0;
+V - \phi(a, b, c, \dots) = 0.
 \]
-on multiplying this equation by all those similarly obtained by permuting its letters, one obtains a symmetrical expression in \(a, b, c, \dots,\) which therefore becomes an equation in \(a\) alone, i.e.~\(F(V, a) = 0\).
+Let us multiply together all the similar equations obtained by permuting 
+all of the letters (with only the first letter remaining fixed). We then arrive 
+at the following expression:
+\[
+\bigl[V - \varphi(a, b, c, d,\dots)\bigr]
+\bigl[V - \varphi(a, c, b, d,\dots)\bigr]
+\bigl[V - \varphi(a, b, d, c,\dots)\bigr]
+\cdots,
+\]
+which is symmetric in $b, c, d,\dots$, and can therefore be expressed 
+as a function of $a$. Hence, we obtain an equation of the form
+\[
+F(V, a) = 0.
+\]
 
 \bigskip
 
@@ -199,28 +214,27 @@ for some root \(b\) of the proposed equation. Hence, as soon as \(a = f(V)\) (i.
 \noindent
 It is thus remarkable that from this proposition one can deduce that the entire group results from an auxiliary equation, namely one in which all of that new equation's roots are rational functions of \(V\) in the given equation. One also notices how peculiar this observation is. Indeed, a single equation with this property is in general not sufficient without a special contrivance.
 
-\bigskip
 
+\newpage
 \noindent
 \textbf{Page 39}
-
-\medskip
 
 \noindent
 \textbf{Proposition I.}
 
 \smallskip
 
+
 \noindent
-\textbf{Theorem.} --- Let there be a given equation, whose roots are \(a, b, c, \dots\). There will always be a group of permutations of the letters \(a, b, c, \dots\) that enjoys the following property:
+\textbf{Theorem.} {Let there be a given equation, whose roots are \(a, b, c, \dots\). There will always be a group of permutations of the letters \(a, b, c, \dots\) that enjoys the following property:
 
 \smallskip
 
 \noindent
-1\(^\circ\) That any function of the roots, which is invariant under the substitutions of this group, is rationally known;
+1. That any function of the roots, which is invariant under the substitutions of this group, is rationally known;
 
 \noindent
-2\(^\circ\) Conversely, that any function of the roots that is rationally determinable is invariant under those substitutions.
+2. Conversely, that any function of the roots that is rationally determinable is invariant under those substitutions.}
 
 \smallskip
 
@@ -237,11 +251,11 @@ It is thus remarkable that from this proposition one can deduce that the entire 
 one assumes \(a = r\), \(b = r^g\), \(c = r^{g^2}, \dots\), with \(g\) being a primitive root, the group of permutations is simply
 \[
 \begin{matrix}
-abcd \quad \dots \\
-bad \quad \dots \\
-\dots \quad kab \\
-\dots \\
-kabc \quad \dots
+abcd......k,\\
+bcd......ka,\\
+cd......kab,\\
+...............\\
+kabc......i;
 \end{matrix}
 \]
 In this particular example, the number of permutations is equal to the degree of the equation, just as in cases where all the roots are expressed rationally one in terms of another.)
@@ -269,45 +283,47 @@ In this particular example, the number of permutations is equal to the degree of
 \medskip
 
 \noindent
-Therefore, consider the irreducible equation for which \(V\) is a root (Lemmas III and IV). Let \(V, V', V'', \dots, V^{(n-1)}\) be the roots of that equation. Let
-\[
-\phi V,\ \phi^1 V,\ \phi^2 V,\ \dots,\ \phi^{(n-1)} V
-\]
+Therefore, consider the irreducible equation for which \(V\) is a root (Lemmas III and IV). Let \(V, V', V'', \dots, V^{(n-1)}\) be the roots of that equation. Let 
+\[\phi V, \phi_1 V, \dots, \phi_{m-1} V\]
 be the roots of the proposed equation. Write out the following \(n\) permutations of these roots:
 
 \[
-\begin{aligned}
-&(V)\quad\ \phi V,\ \phi^1 V,\ \phi^2 V,\ \dots,\ \phi^{(n-1)} V; \\
-&(V')\quad \phi V',\ \phi^1 V',\ \phi^2 V',\ \dots,\ \phi^{(n-1)} V'; \\
-&\dots \\
-&(V^{(n-1)})\quad \phi V^{(n-1)},\ \phi^1 V^{(n-1)},\ \dots,\ \phi^{(n-1)}V^{(n-1)}.
-\end{aligned}
+\begin{array}{l l l l l l l}
+&(V) & \phi V, & \phi_1 V, & \phi_2 V, & \dots, & \phi_{(n-1)} V, \\
+&(V') & \phi V', & \phi_1 V', & \phi_2 V', & \dots, & \phi_{(n-1)} V', \\
+&(V'') & \phi V'', & \phi_1 V'', & \phi_2 V'', & \dots, & \phi_{(n-1)} V'', \\
+&\dots,&\dots,&\dots,&\dots,&\dots,&\dots, \\
+&(V^{(n-1)}) & \phi V^{(n-1)}, & \phi_1 V^{(n-1)}, & \phi_2 V^{(n-1)}, & \dots, & \phi_{(n-1)}V^{(n-1)}:
+\end{array}
 \]
-
 \noindent
-I assert that this group of permutations possesses the stated property. Indeed:
+I assert that this group of permutations possesses the stated property. 
 
 \smallskip
 
-\noindent
+Indeed:
+
+\smallskip
+
+
 1\(^\circ\) Any function \(F\) of the roots, invariant under the substitutions of this group, can be written in the form
-\[
+$
 F = \psi(V).
-\]
+$
 Then one will have
 \[
-\psi(V') = \psi(V''), \dots = \psi\bigl(V^{(n-1)}\bigr),
+\psi V = \psi V = \psi V'', \dots = \psi V^{(n-1)},
 \]
 and thus the value of \(F\) can be determined rationally.
 
 \smallskip
 
-\noindent
+
 2\(^\circ\) Conversely, if a function \(F\) is rationally determinable, and if we define \(F = \phi(V)\), then we must have
 \[
-\phi(V') = \phi(V''), \dots = \phi\bigl(V^{(n-1)}\bigr),
+\psi V = \psi V = \psi V'', \dots = \psi V^{(n-1)},
 \]
-because the equation in \(V\) cannot share a common (commensurable) factor with that in \(V\) satisfying \(F = \phi(V)\) unless it is a purely rational quantity. Therefore \(F\) is necessarily invariant under the substitutions of the group in question.
+because the equation in \(V\) cannot share a common (commensurable) factor with that in \(V\) satisfying \(F = \psi V\) unless it is a purely rational quantity. Therefore \(F\) is necessarily invariant under the substitutions of the group in question.
 
 \smallskip
 
@@ -341,7 +357,7 @@ The substitutions are independent even of the number of roots.
 \begin{enumerate}
 \item If, after adjoining $r$, the equation in $V$ (mentioned above) remains irreducible, it is clear that the group of the equation will not be changed. If, on the contrary, it factors, then the equation in $V$ will decompose into $p$ factors, all of the same degree, of the form
 \[
-f(V,r') \times f(V,r'') \times f(V,r''') \times \dots
+f(V,r) \times f(V,r') \times f(V,r'') \times \dots
 \]
 where $r'$, $r''$, $r'''$, \dots\ are other values of $r$. Thus, the group of the proposed equation will likewise decompose into $p$ groups, each having the same number of letters.
 \end{enumerate}
@@ -356,13 +372,11 @@ Permutations exist because each value of $V$ corresponds to a permutation. These
 
 2\textsuperscript{o}. We saw above that all values of $V$ were rational functions of one another. From this, suppose that $V$ is a root of $f(V,r)=0$, that $F(V)$ is also a root; in the same way, if $V'$ is a root of $f(V,r')=0$, $F(V')$ will also be one; for one will have
 \[
-f\bigl(F(V),\,r\bigr) = \text{a function divisible by } f\bigl(V,\,r\bigr).
+f\bigl[F(V),\,r\bigr] = \text{a function divisible by } f\bigl(V,\,r\bigr).
 \]
-(Hence by Lemma I)
-
-Likewise,
+Hence (by Lemma I)
 \[
-f\bigl(F(V'),\,r'\bigr) = \text{a function divisible by } f\bigl(V',\,r'\bigr).
+f\bigl[F(V'),\,r'\bigr] = \text{a function divisible by } f\bigl(V',\,r'\bigr).
 \]
 This being established, I then see that one obtains the relative group $i'$ by operating throughout in the group relative to $i$ with the same letter substitution.
 
@@ -430,9 +444,6 @@ Adjoining further this $p$-th root, if the group of the equation splits into $p$
 
 Let us take, finally, the function of these roots which must be known in order to unite these partial groups, and let us, for that purpose, add any symmetric function of them whatsoever. (It suffices, for this, to choose a symmetric function...) 
 
-\documentclass[12pt]{article}
-\usepackage[utf8]{inputenc}
-\begin{document}
 
 \section*{Page 45}
 
@@ -450,12 +461,12 @@ Let $\varphi$ be this function of the roots.
 Apply to $\varphi$ one of the substitutions of the total group that is not common to the two partial groups. Let $\varphi_{1}$ be the result. Apply the same substitution again to $\varphi_{1}$, and let $\varphi_{2}$ be the outcome, and so on.
 
 \noindent
-Since $p$ is a prime number, this sequence can only stop at the term $\varphi_{p-1}$; then we shall have $\varphi_{p} = \varphi_{1}$, $\varphi_{p+1} = \varphi_{1}$, and so on.
+Since $p$ is a prime number, this sequence can only stop at the term $\varphi_{p-1}$; then we shall have $\theta_{p} = \theta_{1}$, $\theta_{p+1} = \theta_{1}$, and so on.
 
 \noindent
 That established, it is clear that
 \[
-\bigl(\varphi \;+\; a\,\varphi_{1}\;+\;a^{2}\,\varphi_{2}\;+\;\dots+\;a^{p-1}\,\varphi_{p-1}\bigr)^{p}
+\bigl(\theta \;+\; \alpha\,\theta_{1}\;+\;\alpha^{2}\,\theta_{2}\;+\;\dots+\;\alpha^{p-1}\,\theta_{p-1}\bigr)^{p}
 \]
 will be invariant under all permutations of the total group and, consequently, is thus known at present.
 
@@ -470,7 +481,16 @@ We now adjoin to the equation the radical in question; we can reason by analogy 
 
 \medskip
 \noindent
-\textbf{Scholium.}---It is easy to observe that this approach is the one followed in the resolution of the general equations of the same degree. Indeed, these equations are solved by means of a cubic equation, which itself, in order to be solved, requires a square root. In the natural progression of ideas, it is therefore by this square root that one must begin. Now, by adjoining an arbitrary square root to the equation, the group of the equation---which contains twenty-four substitutions---decomposes into two subgroups that differ only by a sign. Denoting the roots by $a, b, c, d, e$, here is one \dots
+\textbf{Scholium.}---It is easy to observe that this approach is the one followed in the resolution of the general equations of the same degree. Indeed, these equations are solved by means of a cubic equation, which itself, in order to be solved, requires a square root. In the natural progression of ideas, it is therefore by this square root that one must begin. Now, by adjoining an arbitrary square root to the equation, the group of the equation---which contains twenty-four substitutions---decomposes into two subgroups that differ only by a sign. Denoting the roots by $a, b, c, d, e$, here is one of these groups:
+
+\[
+\begin{matrix}
+abcd, & acbd, & adbc,\\ 
+badc, & cabd, & dacb,\\ 
+cdab, & dbac, & bcad,\\ 
+dcba, & bdca, & cdda.
+\end{matrix}
+\]
 
 \bigskip\bigskip
 
@@ -481,15 +501,22 @@ We now adjoin to the equation the radical in question; we can reason by analogy 
 
 Now, this group itself is split into three groups, as indicated by Theorems II and III. Thus, by extracting a single cube root, there remains only the group
 \[
-abcd,\quad acdb,\quad adbc,\quad bcad,\quad cdba,\quad bdca,\quad \dots
+\begin{matrix}
+abcd,\\ badc,\\ cdab,\\
+dcba:
+\end{matrix}
 \]
 Then this group splits again into two groups:
 \[
-abcd,\quad cdab,\quad badc,\quad dcba:\quad \dots
+\begin{matrix}
+abcd, & cdab,\\ badc, & dcba:
+\end{matrix}
 \]
 Hence, after a simple square-root extraction, there will remain
 \[
-abcd,\quad bade;
+\begin{matrix}
+abcd,\\ badc;
+\end{matrix}
 \]
 which will finally be resolved by yet another square-root extraction.
 
@@ -521,18 +548,19 @@ From the preceding proposition, the smallest possible group, before the group th
 
 Hence, the next-to-last group will be
 \[
-(G)\quad
-\begin{cases}
-x_0,\ x_1,\ x_2,\ x_3,\dots,\ x_{n-2},\ x_{n-1},\ x_n=x_1, \\
-x_1,\ x_2,\ x_3,\dots,\ x_{n-1},\ x_n,\ x_0,\ x_2, \\
-x_2,\ x_3,\ x_4,\dots,\ x_n,\ x_0,\ x_1,\ x_3, \\
-\dots\ \dots\ \dots\ \dots\ \dots\ \dots\ \dots\ \dots \\
-x_{n-1},\ x_n,\ x_{n+1},\dots,\ x_{2n-2},\ x_{2n-1},\ x_{2n},\ x_{n+1}
-\end{cases}
+(G)\quad\quad\quad\quad \left\{
+\begin{array}{l l l l l l l l}
+x_0, & x_1, & x_2, & x_3, & \dots, & x_{n-3}, & x_{n-2}, & x_{n-1} \\
+x_1, & x_2, & x_3, & x_4, & \dots, & x_{n-1}, & x_n, & x_0, \\
+x_2, & x_3, & \dots, &  \dots, &  \dots, & x_{n-1}, & x_0, & x_1, \\
+\dots, & \dots, & \dots, & \dots, & \dots, & \dots, & \dots, & \dots, \\
+x_{n-1}, & x_0, & x_{1}, & \dots, & \dots, & x_{n-4}, & x_{n-3}, & x_{n-2}
+\end{array}
+\right.
 \]
 with $x_0,\ x_1,\ x_2,\dots,\ x_{n-1}$ being the roots.
 
-Now, the group that immediately precedes this one in the sequence of decompositions will be composed of a certain number of groups all having the same substitutions as it does. Indeed, I observe that these substitutions are obtained by systematically replacing $x_k$ with $x_k + c$, where $c$ is a constant.
+Now, the group that immediately precedes this one in the sequence of decompositions will be composed of a certain number of groups all having the same substitutions as it does. Indeed, I observe that these substitutions can be expressed in just that way (let us suppose, in general, $x_n=x_0$, $x_{n+1}=x_1,$ $\dots$; it is clear that each of the substitutions of the group (G) are obtained by systematically replacing $x_k$ with $x_{k + c}$, where $c$ is a constant).
 
 \bigskip
 
@@ -540,11 +568,14 @@ Now, the group that immediately precedes this one in the sequence of decompositi
 
 Let us consider any one of the groups similar to group (G). According to Theorem II, it must arise by applying the same substitution throughout this group; for instance, by everywhere replacing $x_k$ by $f(x_k)$, provided there is some defined function. The substitutions in these new groups must be the same as those of group (G), so we must have
 \[
-f(x + c) = f(x) + C,
+f(x + c) = f(k) + C,
 \]
 where $C$ does not depend on $k$. Hence,
 \[
 f(k + 2c) = f(k) + 2C,
+\]
+\[
+.....................................
 \]
 \[
 f(k + mc) = f(k) + mC.
@@ -583,20 +614,20 @@ where $a$ and $b$ are constants.
 
 Conversely, if this condition is met, I assert that the equation is solvable by radicals. Indeed, consider the functions
 \[
-(x_0 + \alpha_1\, x_1 + \alpha_2^2\, x_2 + \dots + \alpha^{n-1}_{n-1}\, x_{n-1} )^n = X_1,
+(x_0 + \alpha\, x_1\, + \alpha^2\, x_2\,\quad + \dots + \alpha^{n-1}\, x_{n-1} \,\quad )^n = X_1,
 \]
 \[
-(x_0 + \alpha_1\, x_2 + \alpha_2^2\, x_3 + \dots + \alpha^{n-1}_{n-1}\, x_{n-1} )^n = X_2,
+(x_0 + \alpha\, x_a\, + \alpha^{2}\, x_{2a}\quad + \dots + \alpha^{n-1}\, x_{(n-1)a}\, )^n = X_a,
 \]
 \[
-(x_0 + \alpha_1\, x_3 + \alpha_2^2\, x_4 + \dots + \alpha^{n-1}_{n-1}\, x_{n-1} )^n = X_3,
+(x_0 + \alpha\, x_{a^2} + \alpha^2\, x_{2a^2} + \dots + \alpha^{n-1}\, x_{(n-1)a^2} )^n = X_{a^2},
 \]
 \[
-\ldots
+...............................................................................\ ,
 \]
-where $\alpha$ is an $n$-th root of unity, a primitive root of $n$.
+where $\alpha$ is an $n$-th root of unity, $a$ a primitive root of $n$.
 
-It is clear that any function invariant under the cyclic substitutions of the quantities $X_1,\ X_4,\ X_2,\dots$ will then be immediately known. Thus, one can find $X_1,\ X_2,\ X_3,\dots$ by Gauss’s method for binomial equations, etc.
+It is clear that any function invariant under the cyclic substitutions of the quantities $X_1,\ X_a,\ X_{a^2},\dots$ will then be immediately known. Thus, one can find $X_1,\ X_a,\ X_{a^2},\dots$ by Gauss’s method for binomial equations, etc.
 
 Thus, in order for an irreducible equation of prime degree to be solvable by radicals, it is necessary and sufficient that every function invariant under the substitutions
 \[
@@ -614,11 +645,8 @@ Finally, we need only ensure that the equation whose roots are these functions a
 
 \section*{Page 50}
 
-\noindent
-\textit{[Beginning of the visible text]}
 
-\noindent
-“This is the method that ought to be used in practice. But we will now present the theorem in another form.”
+This is the method that ought to be used in practice. But we will now present the theorem in another form.
 
 \medskip
 \noindent
@@ -631,7 +659,7 @@ Finally, we need only ensure that the equation whose roots are these functions a
 \noindent
 First, it is necessary, for the substitution 
 \[
-x_{k}\;\longmapsto\; x_{ak + b}
+x_{k}, \quad\quad x_{ak + b}
 \]
 never leaves two letters in the same place. Hence it is clear that, upon adjoining two roots to the equation, by Proposition~IV, its group must reduce to a single permutation.
 
@@ -644,21 +672,17 @@ Thus, and so forth, the theorem is proven.
 
 \medskip
 \noindent
-\textbf{Example of Theorem VII.}---Let $n = 5$. The group is as follows:
-\[
-\begin{aligned}
-abcde &\mapsto bcdea,\\
-bcdea &\mapsto cdeab,\\
-cdeab &\mapsto deabc,\\
-deabc &\mapsto eabcd,\\
-eabcd &\mapsto abcde,
-\end{aligned}
-\]
-\[
-\begin{aligned}
-\dots
-\end{aligned}
-\]
+\textbf{Example of Theorem VII.}
+Let $n = 5$. The group is as follows:
+\begin{center}
+\begin{tabular}{l|l|l|l}
+abcde & acebd & aedcb & adbec \\
+bcdea & cebda & edcba & dbeca \\
+cdeab & ebdac & dcbae & becad \\
+deabc & bdace & cbaed & ecadb \\
+eabcd & daceb & baedc & cadbe \\
+\end{tabular}
+\end{center}
 
 \end{document}
 
