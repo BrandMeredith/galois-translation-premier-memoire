@@ -3,6 +3,8 @@
 \usepackage{needspace}
 \usepackage{amsmath}
 
+\pagenumbering{}
+
 \title{Memoir on the Conditions of Solvability of Equations by Radicals}
 \author{Évariste Galois}
 \date{January 16, 1831}
@@ -15,18 +17,20 @@ The attached memoir is extracted from a work that I had the honor of presenting 
 
 One will find herein a general \textit{condition} which \textit{each equation solvable by radicals satisfies}, and which reciprocally assures their solvability. We apply this only to equations for which the degree is a prime number. Here is the theorem given by our analysis:
 
-\textit{
-So that an equation of prime degree, which does not have commensurable divisors, should be solvable by radicals, it is necessary and sufficient that all the roots be rational functions of any two among them.
-}
-\\
+\textit{So that an equation of prime degree, which does not have commensurable divisors, should be solvable by radicals, it is necessary and sufficient that all the roots be rational functions of any two among them.}
 
 The other applications of the theory are special theories in their own right. They require, however, the use of number theory and a special algorithm: we reserve them for another occasion. They are in part related to modular equations from the theory of elliptic functions, which we show not able to be solved by radicals.
 
 \begin{flushright}
-E. Galois \\
+E. Galois
+
 January 16, 1831
 \end{flushright}
 
+\newpage
+
+
+\centerline{\textbf{Page 35}}
 
 \section*{Principles}
 
@@ -43,6 +47,11 @@ When \textit{all} the coefficients of an equation are numerical and rational, th
 However, when the coefficients of an equation are not all numerical and rational, a \textit{rational divisor} must be understood as a divisor whose coefficients can be expressed as rational functions of the proposed equation's coefficients.
 
 Furthermore, we may agree to consider as rational any rational function of certain quantities that are determined and assumed to be known \textit{a priori}. For example, one may choose a certain root of an integer and consider any rational function of this radical as rational.
+
+\medskip
+
+\newpage
+\centerline{\textbf{Page 36}}
 
 \medskip
 
@@ -86,19 +95,32 @@ When we wish to group substitutions, we will have them all come from the same pe
 
 \smallskip
 
-Since these are always questions where the original arrangement of the letters does not affect the groups we consider, we should have the same substitutions, regardless of the starting permutation.
+Since these are always questions where the original arrangement of the letters does not affect the groups we consider, we should have the same substitutions, regardless of the starting permutation. Thus, if in such a group one has substitutions \(S\) and \(T\), one is assured of having the substitution \(ST\). 
 
+\newpage
 
-\textbf{Page 37}
+\centerline{\textbf{Page 37}}
 
 \medskip
 
-\noindent
-\textbf{Lemma II.} --- Given any equation that has no repeated roots, whose roots are \(a, b, c, \dots\), one can always form a function \(V\) of the roots such that none of the values obtained by permuting the roots in every possible way coincide.
+These are the definitions we felt it necessary to recall.
 
 \smallskip
 
-\noindent
+
+\textbf{Lemma I.} --- \textit{An irreducible equation cannot share any root with a rational equation without dividing it.}
+
+\smallskip
+
+Indeed, the greatest common divisor between the irreducible equation and the other equation would remain rational; hence the conclusion.
+
+\smallskip
+
+
+\textbf{Lemma II.} --- \textit{Given any equation that has no repeated roots, whose roots are \(a, b, c, \dots\), one can always form a function \(V\) of the roots such that none of the values obtained by permuting the roots in every possible way coincide.}
+
+\smallskip
+
 For example, one may take
 \[
 V = Aa + Bb + Cc + \dots,
@@ -107,12 +129,10 @@ where \(A, B, C\) are suitably chosen integers.
 
 \medskip
 
-\noindent
-\textbf{Lemma III.} --- The function \(V\), chosen as indicated in the previous article, has the property that all the roots of the given equation can be expressed rationally in terms of \(V\).
+\textbf{Lemma III.} --- \textit{The function \(V\), chosen as indicated in the previous article, has the property that all the roots of the given equation can be expressed rationally in terms of \(V\).}
 
 \smallskip
 
-\noindent
 Indeed, let
 \[
 V = \phi(a, b, c, d, \dots),
@@ -120,42 +140,6 @@ V = \phi(a, b, c, d, \dots),
 or
 \[
 V - \phi(a, b, c, d, \dots) = 0.
-\]
-By multiplying this equation by all the similar ones obtained by permuting its letters in every way (the first letter remaining fixed, and so on), one arrives at an expression symmetrical in \(a, b, c, \dots,\) which can therefore be written in the form of an equation in \(a\) alone. In this manner, one obtains an equation of the form
-\[
-F(V, a) = 0.
-\]
-
-\smallskip
-
-\noindent
-Thus, if in such a group one has substitutions \(S\) and \(T\), one is assured of having the substitution \(ST\). These are the definitions we felt it necessary to recall.
-
-\medskip
-
-\noindent
-\textbf{Lemma I.} --- An irreducible equation cannot share a common root with a rational equation without dividing the latter. For the greatest common divisor between the irreducible equation and the other equation would still be rational; hence, and so forth.
-
-\smallskip
-
-\noindent
-\textbf{Lemma II.} (restated) --- Being given any equation (with no repeated roots), whose roots are \(a, b, c, \dots\), one can form a function \(V\) of those roots so that none of the values obtained by permuting all the roots in every way is equal to another.
-
-\medskip
-
-\noindent
-(\textit{Repeat of the same construction:} \(V = A a + B b + C c + \dots\).)
-
-\medskip
-
-\noindent
-\textbf{Lemma III.} (restated) --- Once \(V\) is chosen as indicated above, it follows that all the roots of the proposed equation can be expressed rationally in terms of \(V\). Indeed, let
-\[
-V = \phi(a, b, c, \dots),
-\]
-or
-\[
-V - \phi(a, b, c, \dots) = 0.
 \]
 Let us multiply together all the similar equations obtained by permuting 
 all of the letters (with only the first letter remaining fixed). We then arrive 
@@ -172,10 +156,10 @@ as a function of $a$. Hence, we obtain an equation of the form
 F(V, a) = 0.
 \]
 
-\bigskip
+\newpage
 
-\noindent
-\textbf{Page 38}
+
+\centerline{\textbf{Page 38}}
 
 \medskip
 
@@ -217,7 +201,7 @@ It is thus remarkable that from this proposition one can deduce that the entire 
 
 \newpage
 \noindent
-\textbf{Page 39}
+\centerline{\textbf{Page 39}}
 
 \noindent
 \textbf{Proposition I.}
@@ -278,7 +262,7 @@ In this particular example, the number of permutations is equal to the degree of
 \bigskip
 
 \noindent
-\textbf{Page 40}
+\centerline{\textbf{Page 40}}
 
 \medskip
 
@@ -497,7 +481,7 @@ dcba, & bdca, & cdda.
 
 
 
-\textbf{Page 46}
+\centerline{\textbf{Page 46}}
 
 Now, this group itself is split into three groups, as indicated by Theorems II and III. Thus, by extracting a single cube root, there remains only the group
 \[
@@ -530,7 +514,7 @@ We will now apply this condition to irreducible equations whose degree is prime.
 
 \bigskip
 
-\textbf{Page 47}
+\centerline{\textbf{Page 47}}
 
 For if $r,\ r',\ r'',\dots$ are the various values of the radical, and if $Fx = 0$ is the proposed equation, then it would be necessary for $Fx$ to factor into
 \[
@@ -564,7 +548,7 @@ Now, the group that immediately precedes this one in the sequence of decompositi
 
 \bigskip
 
-\textbf{Page 48}
+\centerline{\textbf{Page 48}}
 
 Let us consider any one of the groups similar to group (G). According to Theorem II, it must arise by applying the same substitution throughout this group; for instance, by everywhere replacing $x_k$ by $f(x_k)$, provided there is some defined function. The substitutions in these new groups must be the same as those of group (G), so we must have
 \[
@@ -604,7 +588,7 @@ and will not, in consequence, contain any other circular substitution like that 
 
 \bigskip
 
-\textbf{Page 49}
+\centerline{\textbf{Page 49}}
 
 Therefore, if an irreducible equation of prime degree is solvable by radicals, the group of that equation can only contain substitutions of the form
 \[
